@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-@&sa%y-p=rjcu(3gy#f+1fe+xwtcp8ate!qik!5sfn(p+w6w32
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost","172.20.10.3", "127.0.0.1","*"]
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'alertes',
     'rest_framework',
     'drf_yasg',
+    'rest_framework.authtoken'
     # 'django_filters',
     # 'phonenumber_field',
     # 'rest_framework.authtoken',
